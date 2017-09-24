@@ -1,0 +1,144 @@
+﻿body {
+    background: #132638;
+}
+
+/* ==========================================================================
+   home
+========================================================================== */
+.home h1 {
+    text-align: center;
+}
+
+.home a {
+    font-family: 'Roboto', arial, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.home a.amarelo {
+    color: #D8D360; 
+}
+.home a.amarelo:hover {
+    background: rgba(216,211,96,.3);
+    border:none;
+}
+
+.home a.azul {
+    color: #4ED0E5; 
+}
+
+.home a.azul:hover {
+    background: rgba(78,208,229,.3);
+    border:none;
+}
+
+.home .btn {
+    width: 80%;
+    margin-top: 50px;
+    padding: 20px;
+    }
+
+.home .azul {
+    border: 2px solid #4ED0E5;   
+}
+.home .amarelo {
+    border: 2px solid  #D8D360; 
+}
+.home .logo {
+    height: 191px;
+    width: 270px;
+    margin: 10vh auto;
+}
+
+
+.margin-top {
+    margin-top:20px;
+}
+
+.home i.ico-paraciclo {
+    background: url(../img/paraciclo.png) no-repeat;
+    width: 47px;
+    height: 37px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.home i.ico-chuveiro {
+    background: url(../img/chuveiro.png) no-repeat;
+    width: 47px;
+    height: 37px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 540px) {
+    .home a {font-size:15px!important;}
+    .btn {
+        width: 100%;
+    }
+  }
+
+
+
+
+/* ==========================================================================
+   Header
+========================================================================== */
+
+.navbar {
+    min-height: 100px;
+    margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #132638!important;
+    border: none;
+    background-image: none;
+}
+.navbar-default .navbar-nav>li>a {
+    color:white;
+    font-size: 12px;
+    padding: 24px 0;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #4ED0E5;
+    background-color: none!important;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #4ED0E5;
+}
+
+.navbar-nav {
+    position: relative;
+}
+
+.navbar-nav>li {
+    width: 200px;
+    height: 100px;
+}
+
+.navbar-nav>li>a {
+    padding-top: 64px;
+    padding-bottom: 15px;
+    font-size: 28px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+    height: 100px;
+    width: 260px;
+}
+
+
+.banho {
+
+
+}
+

@@ -1,0 +1,55 @@
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="/img/logo-horizontal.png" class="img-responsive"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="estudio.html">Local para tomar um banho</a></a></li>
+                    <li><a href="trabalhos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+	<h1 class="text-center">Ciclo Busca</h1>
+
+<p ng-show="mensagem.length" class="alert alert-info">
+	{{mensagem}}
+</p>
+
+<div class="row margin-botton">
+	<div class="col-md-12">
+		<form>
+			<div class="input-group" style="margin-top:50px;">
+				<span class="input-group-btn">
+					<a href="/fotos/new" class="btn btn-primary" type="button">
+						Nova foto
+					</a>
+				</span>
+				<input class="form-control" placeholder="filtrar pelo título da foto" 
+					ng-model="filtro" ng-model-options="{ debounce: 500 }">
+                </div>
+		</form>
+	</div> <!-- fim col-md-12 -->
+</div> <!-- fim row -->
+
+<div class="row">
+    <meu-painel class="col-md-2 painel-animado margin-top" ng-repeat="foto in fotos | filter: filtro" titulo="{{foto.titulo}}">
+        <a href="/fotos/post/{{foto._id}}"><minha-foto url="{{foto.url}}" alt="{{foto.titulo}}"></minha-foto></a>
+
+		<a class="btn btn-primary btn-block" href="/fotos/edit/{{foto._id}}">
+			Editar
+		</a>
+		<meu-botao-perigo nome="Remover" acao="remover(foto)">Remover</meu-botao-perigo>
+    </meu-painel>
+  
+</div>
