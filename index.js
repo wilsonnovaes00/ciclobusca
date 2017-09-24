@@ -5,7 +5,7 @@ var http = require('http')
     app.use(express.static(path.resolve(__dirname + '/public')));
 
 
-http.createServer(app).listen(3000, function() {
-    console.log('Servidor escutando na porta: ' );
+    http.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
+        console.log('running...');
 });
 
