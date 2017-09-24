@@ -3,8 +3,6 @@ var http = require('http')
     db = require('./config/database');
 
 
-    app.use(express.static(path.resolve(__dirname)));
-
 http.createServer(app).listen(3000, function() {
     console.log('Servidor escutando na porta: ' + this.address().port);
 });
